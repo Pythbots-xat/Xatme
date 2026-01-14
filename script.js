@@ -1,5 +1,3 @@
-// Advanced bot-themed interactive features
-
 class BotSystem {
     constructor() {
         this.startTime = Date.now();
@@ -17,11 +15,10 @@ class BotSystem {
         this.setupMouseTracking();
     }
 
-    // Terminal typing effect
     setupTypingEffect() {
         const textbox = document.getElementById('textbox');
         const lines = [
-            { text: '$ Initializing PYTH bot system...', delay: 0 },
+            { text: '$ Initializing PYTH bots system...', delay: 0 },
             { text: '$ Core modules loaded successfully.', delay: 1500 },
             { text: '$ Ready for command execution.', delay: 3000 }
         ];
@@ -53,7 +50,6 @@ class BotSystem {
         }, speed);
     }
 
-    // Real-time uptime counter
     setupUptime() {
         const uptimeElement = document.getElementById('uptime');
         
@@ -68,7 +64,6 @@ class BotSystem {
         }, 1000);
     }
 
-    // Animated statistics
     setupStats() {
         const stats = {
             usersOnline: { element: document.getElementById('usersOnline'), target: 1247, duration: 3000 },
@@ -90,7 +85,6 @@ class BotSystem {
             const elapsed = currentTime - startTime;
             const progress = Math.min(elapsed / duration, 1);
             
-            // Easing function
             const easeOutQuart = 1 - Math.pow(1 - progress, 4);
             const current = Math.floor(start + range * easeOutQuart);
             
@@ -111,7 +105,6 @@ class BotSystem {
         requestAnimationFrame(updateNumber);
     }
 
-    // Particle system
     setupParticles() {
         const container = document.getElementById('particles');
         const particleCount = 30;
@@ -122,7 +115,6 @@ class BotSystem {
             }, i * 200);
         }
 
-        // Continuously create new particles
         setInterval(() => {
             this.createParticle(container);
         }, 2000);
@@ -142,13 +134,11 @@ class BotSystem {
         
         container.appendChild(particle);
 
-        // Remove particle after animation
         setTimeout(() => {
             particle.remove();
         }, (duration + delay) * 1000);
     }
 
-    // Interactive terminal commands
     setupTerminalCommands() {
         const textbox = document.getElementById('textbox');
         let commandIndex = 0;
@@ -171,7 +161,6 @@ class BotSystem {
                 const lineText = p.querySelector('.line-text');
                 this.typeWriter(lineText, commands[commandIndex].replace('$ ', ''), 40);
                 
-                // Keep only last 5 lines
                 const lines = textbox.querySelectorAll('.terminal-line');
                 if (lines.length > 5) {
                     lines[0].remove();
@@ -185,7 +174,6 @@ class BotSystem {
         }, 8000);
     }
 
-    // Status indicator animation
     setupStatusIndicator() {
         const statusText = document.getElementById('statusText');
         const statusValue = document.getElementById('statusValue');
@@ -213,7 +201,6 @@ class BotSystem {
         }, 3000);
     }
 
-    // Keyboard interaction effects
     setupKeyboardEffects() {
         const nameMain = document.getElementById('nameMain');
         let glowIntensity = 1;
@@ -231,7 +218,6 @@ class BotSystem {
         });
     }
 
-    // Mouse tracking with parallax
     setupMouseTracking() {
         const card = document.querySelector('.profile-card');
         const avatar = document.querySelector('.avatar');
@@ -252,11 +238,9 @@ class BotSystem {
     }
 }
 
-// Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {
     new BotSystem();
     
-    // Add click ripple effects
     const buttons = document.querySelectorAll('.link-btn');
     buttons.forEach(button => {
         button.addEventListener('click', function(e) {
@@ -285,7 +269,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     
-    // Add ripple animation
     const style = document.createElement('style');
     style.textContent = `
         @keyframes ripple {
@@ -298,7 +281,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.head.appendChild(style);
 });
 
-// Add console easter egg
-console.log('%cPYTH BOT SYSTEM v2.0', 'color: #00d9ff; font-size: 20px; font-weight: bold; text-shadow: 0 0 10px #00d9ff;');
-console.log('%cSystem initialized. All modules loaded.', 'color: #00ff88; font-size: 12px;');
+console.log('%cPythbots ©2026', 'color: #00d9ff; font-size: 20px; font-weight: bold; text-shadow: 0 0 10px #00d9ff;');
+console.log('%cGet actually advanced bots today!', 'color: #00ff88; font-size: 12px;');
 console.log('%cVisit xat.com/Pythbots for more info.', 'color: #66e0ff; font-size: 11px;');
