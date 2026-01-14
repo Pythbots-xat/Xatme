@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PYTH - Advanced Bot System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="terminal-overlay"></div>
+    <div class="grid-background"></div>
+    
+    <div class="container">
+        <div class="scan-line"></div>
+        
+        <div class="profile-card">
+            <div class="card-header">
+                <div class="status-indicator">
+                    <span class="status-dot"></span>
+                    <span class="status-text" id="statusText">SYSTEM ONLINE</span>
+                </div>
+                <div class="header-line"></div>
+            </div>
+            
+            <div class="header">
+                <div class="avatar-container">
+                    <div class="avatar">
+                        <div class="avatar-inner">PYTH</div>
+                        <div class="avatar-scan"></div>
+                    </div>
+                    <div class="avatar-ring"></div>
+                </div>
+                <h1 class="name">
+                    <span class="name-prefix">&gt;</span>
+                    <span class="name-main" id="nameMain">PYTH</span>
+                    <span class="name-cursor">_</span>
+                </h1>
+                <div class="subtitle">ADVANCED BOT SYSTEM v2.0</div>
+            </div>
+            
+            <div class="info-section">
+                <div class="info-item">
+                    <span class="label">&gt; STATUS</span>
+                    <span class="value" id="statusValue">
+                        <span class="pulse-dot"></span>
+                        OPERATIONAL
+                    </span>
+                </div>
+                <div class="info-item">
+                    <span class="label">&gt; LOCATION</span>
+                    <span class="value">xat.com/Pythbots</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">&gt; UPTIME</span>
+                    <span class="value" id="uptime">00:00:00</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">&gt; COMMANDS</span>
+                    <span class="value" id="commandCount">226+</span>
+                </div>
+            </div>
+            
+            <div class="divider">
+                <span class="divider-line">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+            </div>
+            
+            <div class="textbox-container">
+                <div class="textbox-header">
+                    <span class="textbox-title">&gt; SYSTEM_MESSAGE</span>
+                </div>
+                <div class="textbox" id="textbox">
+                    <p class="terminal-line"><span class="prompt">$</span> Initializing PYTH bot system...</p>
+                    <p class="terminal-line"><span class="prompt">$</span> Core modules loaded successfully.</p>
+                    <p class="terminal-line"><span class="prompt">$</span> Ready for command execution.</p>
+                </div>
+            </div>
+            
+            <div class="links-section">
+                <a href="https://xat.com/Pythbots" class="link-btn" target="_blank">
+                    <span class="btn-icon">▶</span>
+                    <span class="btn-text">MAIN CHAT</span>
+                    <span class="btn-arrow">→</span>
+                </a>
+                <a href="https://pythbots.com" class="link-btn" target="_blank">
+                    <span class="btn-icon">⚡</span>
+                    <span class="btn-text">WEBSITE</span>
+                    <span class="btn-arrow">→</span>
+                </a>
+                <a href="https://xat.com/Pythbots" class="link-btn" target="_blank">
+                    <span class="btn-icon">▷</span>
+                    <span class="btn-text">GET STARTED</span>
+                    <span class="btn-arrow">→</span>
+                </a>
+            </div>
+            
+            <div class="stats-section">
+                <div class="stat-item">
+                    <div class="stat-value" id="usersOnline">0</div>
+                    <div class="stat-label">USERS</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="botsActive">0</div>
+                    <div class="stat-label">BOTS</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="commandsExec">0</div>
+                    <div class="stat-label">CMDS/HR</div>
+                </div>
+            </div>
+            
+            <div class="footer">
+                <div class="footer-line"></div>
+                <p class="footer-text">
+                    <span class="footer-prefix">[</span>
+                    POWERED BY PYTHBOTS
+                    <span class="footer-suffix">]</span>
+                </p>
+                <div class="footer-version">v2.0.1 | BUILD 2024</div>
+            </div>
+        </div>
+        
+        <div class="particles-container" id="particles"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
