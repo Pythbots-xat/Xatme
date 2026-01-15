@@ -18,9 +18,9 @@ class BotSystem {
     setupTypingEffect() {
         const textbox = document.getElementById('textbox');
         const lines = [
-            { text: '$ Initializing PYTH bots system...', delay: 0 },
-            { text: '$ Core modules loaded successfully.', delay: 1500 },
-            { text: '$ Ready for command execution.', delay: 3000 }
+            { text: '$ Welcome to Pythbots.', delay: 0 },
+            { text: '$ Transform your chat with advanced bots.', delay: 2500 },
+            { text: '$ Ready to change?', delay: 5000 }
         ];
 
         textbox.innerHTML = '';
@@ -93,7 +93,6 @@ class BotSystem {
             if (progress < 1) {
                 requestAnimationFrame(updateNumber);
             } else {
-                // Add random fluctuation
                 setInterval(() => {
                     const fluctuation = Math.floor(Math.random() * 10) - 5;
                     const newValue = Math.max(0, end + fluctuation);
@@ -144,11 +143,11 @@ class BotSystem {
         let commandIndex = 0;
         
         const commands = [
-            '$ Scanning for active connections...',
-            '$ Database connection: ESTABLISHED',
-            '$ WebSocket status: CONNECTED',
-            '$ Command handler: READY',
-            '$ All systems operational'
+            '$ Try out 7 days for free.',
+            '$ We provide the most value for your xats',
+            '$ Constantly updating our bots',
+            '$ Missing features? Let us know!',
+            '$ Get started today! xat.com/pythbots'
         ];
 
         setInterval(() => {
@@ -281,6 +280,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.head.appendChild(style);
 });
 
-console.log('%cPythbots ©2026', 'color: #00d9ff; font-size: 20px; font-weight: bold; text-shadow: 0 0 10px #00d9ff;');
+console.log('%cPythbots.com', 'color: #00d9ff; font-size: 20px; font-weight: bold; text-shadow: 0 0 10px #00d9ff;');
 console.log('%cGet actually advanced bots today!', 'color: #00ff88; font-size: 12px;');
 console.log('%cVisit xat.com/Pythbots for more info.', 'color: #66e0ff; font-size: 11px;');
