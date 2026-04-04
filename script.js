@@ -143,7 +143,7 @@ class BotSystem {
         let commandIndex = 0;
         
         const commands = [
-            '$ Try out 7 days for free.',
+            '$ Try out 3 days for free.',
             '$ We provide the most value for your xats',
             '$ Constantly updating our bots',
             '$ Missing features? Let us know!',
